@@ -1,24 +1,25 @@
+package com.pluralsight;
+
 import java.util.Objects;
 import java.util.Scanner;
 
-public class MathCalculator {
+public class Math {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         int answer;
 
-        System.out.println("Enter the first number: ");
+        System.out.print("Enter the first number: ");
         int x = myScanner.nextInt();
 
-        System.out.println("Enter the second number: ");
+        System.out.print                              ("Enter the second number: ");
         int y = myScanner.nextInt();
-
         System.out.println("Possible calculations:");
         System.out.println("    (A)dd");
         System.out.println("    (S)ubtract");
         System.out.println("    (M)ultiply");
         System.out.println("    (D)ivide");
 
-        System.out.println("Please select an option: ");
+        System.out.print("Please select an option: ");
         myScanner.nextLine();
         String o = myScanner.nextLine();
 
@@ -36,5 +37,7 @@ public class MathCalculator {
             System.out.println(x + " / " + y + " = " + answer);
         }
 
+
     }
+
 }
